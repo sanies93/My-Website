@@ -1,0 +1,154 @@
+/* header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+.side-nav {
+  transform: translateX(0%) !important;
+}
+
+#slide-out {
+  background: black;
+}
+
+#footer {
+  position: absolute;
+  margin-top: 40px;
+} */
+
+#wrapper {
+  padding-left: 300px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -300px;
+  left: 300px;
+  width: 300px;
+  background: black;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Spirax', cursive;
+}
+
+a {
+  color: white;
+}
+
+.divider { 
+  display: relative;
+  margin-top: 40px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 32px;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-family: 'Katibeh', cursive;
+}
+
+li {
+  display: block;
+  width: 100%;
+  padding: 80px auto;
+  margin: 20px auto;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Katibeh', cursive;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: rgb(39, 38, 38);
+}
+
+/* @media (max-width:680px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+    left: 0;
+  }
+  #wrapper.active {
+    position: relative;
+    left: 300px;
+  }
+  #wrapper.active #sidebar-wrapper {
+    left: 300px;
+    width: 300px;
+    transition: all 0.4s ease 0s;
+  }
+} */
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* 
+img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  border: 2px outset goldenrod;
+} */
+
+.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+@media screen and (max-width: 1024px) {
+  .bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+h2 {
+  font-family: 'Abril Fatface', cursive;
+  padding: 20px;
+}
+
+.card {
+  opacity: 0.6;
+  margin-top: 20px;
+}
