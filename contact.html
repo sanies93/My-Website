@@ -51,7 +51,7 @@
         <li class="nav-item" style="color: rgb(48, 250, 250)"><i class="sv-slim-icon fas fa-eye"></i><a
             class="nav-link waves-effect" style="color: rgb(48, 250, 250)" href="contact.html">Contact</a>
         </li>
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
         <li class="links"><a href="https://www.linkedin.com/in/sahra-anies-424113183/" target="_blank"><i
               class="fab fa-linkedin"></i></a><a href="https://github.com/sanies93" target="_blank"><i
               class="fab fa-github"></i></a><a href="#"><i class="fab fa-twitter-square"></i></a></li>
@@ -61,9 +61,10 @@
     <div id="page-content-wrapper">
       <div class="page-content">
         <div class="container">
+          <img src="assets/images/bg.png" class="bg">
           <div class="row">
             <div class="col-md-12">
-              <h2>CONTACT</h2>
+              <h2 id="contact">CONTACT</h2>
               <hr class="my-4">
             </div>
           </div>
@@ -80,13 +81,11 @@
                   <label for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
                 </div>
 
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class ="wrapper" name="message" id="message" rows="400" cols="300"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
